@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Agent Builder</title><link rel="stylesheet" href="agent-builder-style.css"></head>
+<body>
+<header><a href="../index.html">← Showcase</a><span>AGENT BUILDER</span><div class="avatar">AI</div></header>
+<main>
+<div class="intro"><span>CREATE A NEW AGENT</span><h1>Build an intelligent agent</h1><p>Configure the agent identity, model, capabilities and execution workflow.</p></div>
+<section class="builder">
+<form id="form">
+<div class="group"><label>Agent Name</label><input id="name" placeholder="e.g. Market Researcher" required></div>
+<div class="group"><label>Agent Type</label><select><option>Research Agent</option><option>Content Agent</option><option>Data Agent</option><option>Support Agent</option></select></div>
+<div class="group full"><label>Mission</label><textarea placeholder="What should this agent accomplish?"></textarea></div>
+<div class="group"><label>AI Model</label><select><option>Advanced Reasoning</option><option>Fast Generation</option><option>Analytical Model</option></select></div>
+<div class="group"><label>Execution Mode</label><select><option>Autonomous</option><option>Human Approval</option><option>Scheduled</option></select></div>
+<div class="full"><label>Capabilities</label><div class="capabilities"><label><input type="checkbox" checked> Web Search</label><label><input type="checkbox" checked> Data Analysis</label><label><input type="checkbox"> File Access</label><label><input type="checkbox"> External APIs</label><label><input type="checkbox" checked> Content Generation</label><label><input type="checkbox"> Notifications</label></div></div>
+<button class="create" type="submit">Create Agent</button>
+</form>
+<aside><div class="preview"><span>LIVE PREVIEW</span><div class="robot">✦</div><h2 id="previewName">Your Agent</h2><p id="previewText">Configure your agent to see its preview.</p><div class="status">● Ready to configure</div></div></aside>
+</section>
+</main><script src="agent-builder-script.js"></script></body></html>
