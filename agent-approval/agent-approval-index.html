@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Agent Approval Center</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><a href="../index.html">← Showcase</a><span>SECURITY & CONTROL</span><h1>Agent Approval Center</h1><p>Review autonomous actions before they execute.</p></div><div class="shield">🛡️</div></header>
+<main>
+<section class="metrics"><div><small>Pending Requests</small><strong>08</strong></div><div><small>Approved Today</small><strong>42</strong></div><div><small>Rejected Today</small><strong>05</strong></div><div><small>Risk Level</small><strong class="low">Low</strong></div></section>
+<section class="layout">
+<div class="panel"><div class="heading"><h2>Approval Requests</h2><button onclick="filterRequests()">All Requests</button></div>
+<article class="request"><div class="request-icon">⌁</div><div class="info"><h3>Data Agent wants to export a report</h3><p>Export customer analytics to a CSV file.</p><small>Requested 3 minutes ago · Medium Risk</small></div><div class="actions"><button class="approve" onclick="approve(this)">Approve</button><button class="reject" onclick="reject(this)">Reject</button></div></article>
+<article class="request"><div class="request-icon">◈</div><div class="info"><h3>Research Agent requests external API access</h3><p>Connect to a market intelligence service.</p><small>Requested 8 minutes ago · Low Risk</small></div><div class="actions"><button class="approve" onclick="approve(this)">Approve</button><button class="reject" onclick="reject(this)">Reject</button></div></article>
+<article class="request"><div class="request-icon">✦</div><div class="info"><h3>Support Agent wants to send an email</h3><p>Send a response to a customer automatically.</p><small>Requested 15 minutes ago · High Risk</small></div><div class="actions"><button class="approve" onclick="approve(this)">Approve</button><button class="reject" onclick="reject(this)">Reject</button></div></article>
+</div>
+<aside class="panel"><h2>Permission Matrix</h2><p class="muted">Agent capabilities</p><div class="perm"><span>Web Search</span><b>Allowed</b></div><div class="perm"><span>Data Analysis</span><b>Allowed</b></div><div class="perm"><span>File Export</span><b>Approval</b></div><div class="perm"><span>External API</span><b>Approval</b></div><div class="perm"><span>Email Sending</span><b>Restricted</b></div></aside>
+</section>
+</main><script src="script.js"></script></body></html>
